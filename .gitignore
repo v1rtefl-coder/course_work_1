@@ -2,22 +2,38 @@
 __pycache__/
 *.py[cod]
 *$py.class
-
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-
-# Environments
-.env
-.venv
+*.so
+.Python
 env/
 venv/
-ENV/
-env.bak/
-venv.bak/
+.env
+.venv
+.idea/
+.vscode/
+*.egg-info/
+dist/
+build/
 
-# Logs and databases
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Logs
 *.log
-*.sqlite
+logs/
+
+# Reports
+reports_output/
+
+# Data
+data/*.xlsx
+!data/sample_operations.xlsx
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Secrets
+.env
+user_settings.json
